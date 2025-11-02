@@ -1,0 +1,15 @@
+server:
+  port: 8084
+# Application Name
+
+# -- Application Configuration --
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:///../config-repo
